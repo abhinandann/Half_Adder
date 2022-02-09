@@ -3,14 +3,14 @@
 ### This repository presents the Design and implementation of Half Adder using transmission gates. Design of Half Adder circuit is done by using an Opensource EDA Tool called eSim, an Opensource Spice Simulator called ngspice and Sky130 PDK.
 
 ## Table of Contents
-#### 1.[ABSTRACT](#ABSTRACT)
-#### 2.[eSIM EDA TOOL](#eSIM EDA TOOL) 
-#### 3.[Sky130 PDK](#Sky130 PDK)
-#### 4.[CIRCUIT DESIGN](#CIRCUIT DESIGN)
-#### 5.[IMPLEMENTATION](#IMPLEMENTATION)
-#### 6.[REFERENCES](#REFERENCES)
-#### 7.[AKNOWLEDGEMENT](#AKNOWLEDGEMENT)
-#### 8.[AUTHOR](#AUTHOR)
+#### 1.[ABSTRACT](https://github.com/abhinandann/Half_Adder/edit/main/README.md#1abstract-1)
+#### 2.[eSIM EDA TOOL](https://github.com/abhinandann/Half_Adder/edit/main/README.md#2esim-eda-tool) 
+#### 3.[Sky130 PDK](https://github.com/abhinandann/Half_Adder/edit/main/README.md#3sky130-pdk)
+#### 4.[CIRCUIT DESIGN](https://github.com/abhinandann/Half_Adder/edit/main/README.md#4circuit-design)
+#### 5.[IMPLEMENTATION](https://github.com/abhinandann/Half_Adder/edit/main/README.md#5implementation-1)
+#### 6.[REFERENCES](https://github.com/abhinandann/Half_Adder/edit/main/README.md#6references-1)
+#### 7.[AKNOWLEDGEMENT](https://github.com/abhinandann/Half_Adder/edit/main/README.md#7-aknowledgement)
+#### 8.[AUTHOR](https://github.com/abhinandann/Half_Adder/edit/main/README.md#8author-1)
 
 ## 1.ABSTRACT
 
@@ -66,10 +66,12 @@ These XOR and AND gates are implemented using CMOS transmission gates. CMOS tran
 In the reference circuit, half adder is implemented using transmission gate with two inverter circuits. Using CMOS TG logic, we can reduce the number transistors in the circuit implementation as compared to traditional CMOS half adder circuit. 
 
  ### REFERENCE CIRCUIT
- ![image](https://user-images.githubusercontent.com/91964227/153194334-83e6f170-7bfa-47f0-aa36-ac30acf8842f.png)
+![ref_ckt](https://user-images.githubusercontent.com/91964227/153210846-9f9957a5-493b-42b3-b5b0-225738734291.png)
+
  
  ### REFERENCE WAVEFORMS
- ![image](https://user-images.githubusercontent.com/91964227/153194511-793017f3-e14a-4107-b3ed-8d8617be5b9f.png)
+![ref_wavform](https://user-images.githubusercontent.com/91964227/153210895-d5382792-e20f-4fa7-95c9-4dd56324698a.png)
+
  
 ## 5.IMPLEMENTATION
 Half Adder is implemented using eSIM tool. 
@@ -104,4 +106,4 @@ The above waveform can be verified using the truth table given [here](#CIRCUIT D
 ## 8.AUTHOR
 
 ABHINANDAN R APPANNAVAR, 3rd year B.TECH, ECE, SDM COLLEGE OF ENGINEERING AND TECHNOLOGY,DHARWAD-580002 
-Contact:abhinandan7353@gmail.com
+-Contact:abhinandan7353@gmail.com
