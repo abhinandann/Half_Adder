@@ -26,21 +26,21 @@ More details on eSIM tool can be found [here](https://esim.fossee.in/)
 The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at 130nm technology.
 The SkyWater Open Source PDK documentation can be found [here](https://skywater-pdk.readthedocs.io/en/main/).Sky130 PDK foundary can be downloaded [here](https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip)
  
- Steps to Sky130 PDK download and Implementaion:
-
+ Steps to download Sky130 PDK and Implementaion:
 1. Download sky130 PDK files from the above link.
 2. Unzip the folder and save the sky130 files in a new folder.
 3. Save the .cir.out file in the sky_fd_pr folder as .cir file.
 4. Open with notepad and add the path .lib "models/sky130.lib.spice" tt at the top.
 5. Replace with CMOSP, mos_p with sky130_fd_pr_pfet_01v8 and CMOSN, mos_n with  sky130_fd_pr_nfet_01v8.
 
-Note: For more details go to the cells folder in sky_fd_pr and follow these steps:
+Note: To replace the components like resistor,inductor with sky130 equivalent, follow these steps:
 1. Open the specific component folder which you want to use.
 2. Open the test folder and check the SPICE file.
 3. The SPICE file is an example of implementation of that component.
 4. You will get to know how to use the component in your circuit.
 
 Now Run the circuit with ngspice.
+
 To Run the circuit using ngspice follow the below steps
 1. Right click on .cir file.
 2. Click on Open With.
@@ -58,7 +58,7 @@ The 2-bit half adder truth table is as below:
 |1     | 0      |1       |0  |
 |1      |1      |0       |1  |
 
-Half adder can be easily implemented with the help of the XOR Gate for the output ‘SUM’ and an AND Gate for the ‘CARRY’.
+Half adder can be  implemented with the help of the XOR Gate for the output ‘SUM’ and an AND Gate for the ‘CARRY’.
 
 * Sum= A XOR B 
 * Carry = A AND B
