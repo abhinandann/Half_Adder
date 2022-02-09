@@ -59,7 +59,7 @@ The 2-bit half adder truth table is as below:
 |1      |1      |0       |1  |
 
 Half adder can be easily implemented with the help of the XOR Gate for the output ‘SUM’ and an AND Gate for the ‘CARRY’.
-                                                            *  Sum= A XOR B
+                                                            * Sum= A XOR B
                                                             * Carry = A AND B
 These XOR and AND gates are implemented using CMOS transmission gates. CMOS transmission gates consists of one NMOS and one PMOS transistor, connected in parallel. The gate voltages applied to these NMOS and PMOS transistors are set to be complementary signals. As such, CMOS Transmission Gates(TG) operates as a bidirectional switch between the nodes A and B which is controlled by signal C. 
 
@@ -96,8 +96,8 @@ The above waveform can be verified using the truth table given [here](https://gi
 
 ## 6.REFERENCES
 
--[1]	R. K. (2015). Design of area and power efficient half adder using Transmission Gate. International Journal of Research in Engineering and Technology, 04(04), 122–127. https://doi.org/10.15623/ijret.2015.0404021 
--[2]	Balaji, G. N., V.A., & K.A. (2016). COMBINATIONAL CIRCUITS USING TRANSMISSION GATE LOGIC FOR POWER OPTIMIZATION. International Research Journal of Engineering and Technology (IRJET), 03(05). https://www.irjet.net
+* [1]	R. K. (2015). Design of area and power efficient half adder using Transmission Gate. International Journal of Research in Engineering and Technology, 04(04), 122–127. https://doi.org/10.15623/ijret.2015.0404021 
+* [2]	Balaji, G. N., V.A., & K.A. (2016). COMBINATIONAL CIRCUITS USING TRANSMISSION GATE LOGIC FOR POWER OPTIMIZATION. International Research Journal of Engineering and Technology (IRJET), 03(05). https://www.irjet.net
 
 ## 7. AKNOWLEDGEMENT
 
