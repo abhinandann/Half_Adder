@@ -4,7 +4,7 @@
 
 ## Table of Contents
 #### 1.[ABSTRACT](https://github.com/abhinandann/Half_Adder/blob/main/README.md#1abstract-1)
-#### 2.[eSIM EDA TOOL](https://github.com/abhinandann/Half_Adder/edit/main/README.md#2esim-eda-tool) 
+#### 2.[eSIM EDA TOOL](https://github.com/abhinandann/Half_Adder/blob/main/README.md#2esim-eda-tool-1) 
 #### 3.[Sky130 PDK](https://github.com/abhinandann/Half_Adder/edit/main/README.md#3sky130-pdk)
 #### 4.[CIRCUIT DESIGN](https://github.com/abhinandann/Half_Adder/edit/main/README.md#4circuit-design)
 #### 5.[IMPLEMENTATION](https://github.com/abhinandann/Half_Adder/edit/main/README.md#5implementation-1)
