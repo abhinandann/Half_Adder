@@ -161,5 +161,5 @@ Waveform can be verified using the truth table given [here](https://github.com/a
 
 ### 8. AUTHOR
 
-ABHINANDAN R APPANNAVAR, 3rd year B.TECH, ECE, SDM COLLEGE OF ENGINEERING AND TECHNOLOGY,DHARWAD-580002 
+ABHINANDAN R APPANNAVAR, 5th sem B.E , ECE, SDM COLLEGE OF ENGINEERING AND TECHNOLOGY,DHARWAD-580002 
 * Contact: abhinandan7353@gmail.com
