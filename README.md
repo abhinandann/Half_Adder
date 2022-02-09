@@ -28,38 +28,38 @@ The SkyWater Open Source PDK documentation can be found [here](https://skywater-
  
  Follow these steps for Sky130 download and implementaion:
 
-1.Download sky130 PDK files from the above link.
-2.Unzip the folder and save the sky130 files in a new folder.
-3.Save the .cir.out file in the sky_fd_pr folder as .cir file.
-4.Open with notepad and add the path .lib "models/sky130.lib.spice" tt at the top.
-5.Replace with CMOSP, mos_p with sky130_fd_pr_pfet_01v8 and CMOSN, mos_n with  sky130_fd_pr_nfet_01v8.
+-1.Download sky130 PDK files from the above link.
+-2.Unzip the folder and save the sky130 files in a new folder.
+-3.Save the .cir.out file in the sky_fd_pr folder as .cir file.
+-4.Open with notepad and add the path .lib "models/sky130.lib.spice" tt at the top.
+-5.Replace with CMOSP, mos_p with sky130_fd_pr_pfet_01v8 and CMOSN, mos_n with  sky130_fd_pr_nfet_01v8.
 
 Note: For more details go to the cells folder in sky_fd_pr and follow these steps:
-1.Open the specific component folder which you want to use.
-2.Open the test folder and check the SPICE file.
-3.The SPICE file is an example of implementation of that component.
-4.You will get to know how to use the component in your circuit.
+-1.Open the specific component folder which you want to use.
+-2.Open the test folder and check the SPICE file.
+-3.The SPICE file is an example of implementation of that component.
+-4.You will get to know how to use the component in your circuit.
 
 Now Run the circuit with ngspice.
 To Run the circuit using ngspice follow the below steps
-1.Right click on .cir file.
-2.Click on Open With.
-3.Browse for the ngspice.
-4.If ngspice not present scroll down click on More Apps. Go to the FOSSEE folder search for Ngspice and Run it
+-1.Right click on .cir file.
+-2.Click on Open With.
+-3.Browse for the ngspice.
+-4.If ngspice not present scroll down click on More Apps. Go to the FOSSEE folder search for Ngspice and Run it
 
  ## 4.CIRCUIT DESIGN
 
 Half adder accepts two binary inputs namely A and B and produces the output Sum and Carry. The four possible combinations of two binary digits A and B are ,when A is 0 and B is 0 the Sum and Carry output are 0 respectively. When A is 0 and B is 1 the Sum output is 1, as there is no Carry hence Carry output is 0. When A is 1 and B is 0 we get the same output as of case 2 i.e., Sum =1 and Carry =0. when A is 1 and B is 1, the Sum output is 0 whereas the Carry output is 1.
 The 2-bit half adder truth table is as below:
-A	 B	  SUM	    CARRY
-0	 0	   0	      0         
-0	 1	   1	      0
-1	 0	   1 	      0
-1	 1	   0	      1
+-A	 B	  SUM	    CARRY
+-0	 0	   0	      0         
+-0	 1	   1	      0
+-1	 0	   1 	      0
+-1	 1	   0	      1
 
 Half adder can be easily implemented with the help of the XOR Gate for the output ‘SUM’ and an AND Gate for the ‘CARRY’.
-                                                              Sum= A XOR B
-                                                             Carry = A AND B
+                                                              -Sum= A XOR B
+                                                            - Carry = A AND B
 
 These XOR and AND gates are implemented using CMOS transmission gates. CMOS transmission gates consists of one NMOS and one PMOS transistor, connected in parallel. The gate voltages applied to these NMOS and PMOS transistors are set to be complementary signals. As such, CMOS Transmission Gates(TG) operates as a bidirectional switch between the nodes A and B which is controlled by signal C. 
 
@@ -94,8 +94,8 @@ The above waveform can be verified using the truth table given [here](#CIRCUIT D
 
 ## 6.REFERENCES
 
-[1]	R. K. (2015). Design of area and power efficient half adder using Transmission Gate. International Journal of Research in Engineering and Technology, 04(04), 122–127. https://doi.org/10.15623/ijret.2015.0404021 
-[2]	Balaji, G. N., V.A., & K.A. (2016). COMBINATIONAL CIRCUITS USING TRANSMISSION GATE LOGIC FOR POWER OPTIMIZATION. International Research Journal of Engineering and Technology (IRJET), 03(05). https://www.irjet.net
+-[1]	R. K. (2015). Design of area and power efficient half adder using Transmission Gate. International Journal of Research in Engineering and Technology, 04(04), 122–127. https://doi.org/10.15623/ijret.2015.0404021 
+-[2]	Balaji, G. N., V.A., & K.A. (2016). COMBINATIONAL CIRCUITS USING TRANSMISSION GATE LOGIC FOR POWER OPTIMIZATION. International Research Journal of Engineering and Technology (IRJET), 03(05). https://www.irjet.net
 
 ## 7. AKNOWLEDGEMENT
 
