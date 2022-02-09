@@ -26,7 +26,7 @@ More details on eSIM tool can be found [here](https://esim.fossee.in/)
 The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at 130nm technology.
 The SkyWater Open Source PDK documentation can be found [here](https://skywater-pdk.readthedocs.io/en/main/).Sky130 PDK foundary can be downloaded [here](https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip)
  
- Follow these steps for Sky130 download and implementaion:
+ Steps to Sky130 PDK download and Implementaion:
 
 1. Download sky130 PDK files from the above link.
 2. Unzip the folder and save the sky130 files in a new folder.
@@ -42,25 +42,24 @@ Note: For more details go to the cells folder in sky_fd_pr and follow these step
 
 Now Run the circuit with ngspice.
 To Run the circuit using ngspice follow the below steps
--1.Right click on .cir file.
--2.Click on Open With.
--3.Browse for the ngspice.
--4.If ngspice not present scroll down click on More Apps. Go to the FOSSEE folder search for Ngspice and Run it
+1. Right click on .cir file.
+2. Click on Open With.
+3. Browse for the ngspice.
+4. If ngspice not present scroll down click on More Apps. Go to the FOSSEE folder search for Ngspice and Run it
 
  ## 4.CIRCUIT DESIGN
 
 Half adder accepts two binary inputs namely A and B and produces the output Sum and Carry. The four possible combinations of two binary digits A and B are ,when A is 0 and B is 0 the Sum and Carry output are 0 respectively. When A is 0 and B is 1 the Sum output is 1, as there is no Carry hence Carry output is 0. When A is 1 and B is 0 we get the same output as of case 2 i.e., Sum =1 and Carry =0. when A is 1 and B is 1, the Sum output is 0 whereas the Carry output is 1.
 The 2-bit half adder truth table is as below:
--A	 B	  SUM	    CARRY
--0	 0	   0	      0         
--0	 1	   1	      0
--1	 0	   1 	      0
--1	 1	   0	      1
+* A	 B	  SUM	    CARRY
+* 0	 0	   0	      0         
+* 0	 1	   1	      0
+* 1	 0	   1 	      0
+* 1	 1	   0	      1
 
 Half adder can be easily implemented with the help of the XOR Gate for the output ‘SUM’ and an AND Gate for the ‘CARRY’.
                                                               -Sum= A XOR B
                                                             - Carry = A AND B
-
 These XOR and AND gates are implemented using CMOS transmission gates. CMOS transmission gates consists of one NMOS and one PMOS transistor, connected in parallel. The gate voltages applied to these NMOS and PMOS transistors are set to be complementary signals. As such, CMOS Transmission Gates(TG) operates as a bidirectional switch between the nodes A and B which is controlled by signal C. 
 
 In the reference circuit, half adder is implemented using transmission gate with two inverter circuits. Using CMOS TG logic, we can reduce the number transistors in the circuit implementation as compared to traditional CMOS half adder circuit. 
