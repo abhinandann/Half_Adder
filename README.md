@@ -51,16 +51,12 @@ To Run the circuit using ngspice follow the below steps
 
 Half adder accepts two binary inputs namely A and B and produces the output Sum and Carry. The four possible combinations of two binary digits A and B are ,when A is 0 and B is 0 the Sum and Carry output are 0 respectively. When A is 0 and B is 1 the Sum output is 1, as there is no Carry hence Carry output is 0. When A is 1 and B is 0 we get the same output as of case 2 i.e., Sum =1 and Carry =0. when A is 1 and B is 1, the Sum output is 0 whereas the Carry output is 1.
 The 2-bit half adder truth table is as below:
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-
-| A  | B | sum | carry |
-| 0  | 0 |  0  |   0   |
-| 0  | 1 |  1  |   0   |
-| 1  | 0 |  1  |   0   |
-| 1  | 1 |  0  |   1   |
+| A | B | SUM | CARRY |
+| :---         |     :---:      |          ---: | --: |
+| 0   | 0    | 0   |0  |
+| 0    | 1      | 1      |0  |
+|1     | 0      |1       |0  |
+|1      |1      |0       |1  |
 
 Half adder can be easily implemented with the help of the XOR Gate for the output ‘SUM’ and an AND Gate for the ‘CARRY’.
                                                               -Sum= A XOR B
