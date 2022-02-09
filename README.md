@@ -3,7 +3,7 @@
 ### This repository presents the Design and implementation of Half Adder using transmission gates. Design of Half Adder circuit is done by using an Opensource EDA Tool called eSim, an Opensource Spice Simulator called ngspice and Sky130 PDK.
 
 ## Table of Contents
-#### 1.[ABSTRACT](https://github.com/abhinandann/Half_Adder/edit/main/README.md#1abstract-1)
+#### 1.[ABSTRACT](https://github.com/abhinandann/Half_Adder/blob/main/README.md#1abstract-1)
 #### 2.[eSIM EDA TOOL](https://github.com/abhinandann/Half_Adder/edit/main/README.md#2esim-eda-tool) 
 #### 3.[Sky130 PDK](https://github.com/abhinandann/Half_Adder/edit/main/README.md#3sky130-pdk)
 #### 4.[CIRCUIT DESIGN](https://github.com/abhinandann/Half_Adder/edit/main/README.md#4circuit-design)
