@@ -24,7 +24,7 @@ More details on eSIM tool can be found [here](https://esim.fossee.in/)
 ### 3. Sky130 PDK
 
 The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at 130nm technology.
-The SkyWater Open Source PDK documentation can be found [here](https://skywater-pdk.readthedocs.io/en/main/).Sky130 PDK foundary can be downloaded [here](https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip)
+The SkyWater Open Source PDK documentation can be found [here](https://skywater-pdk.readthedocs.io/en/main/). Sky130 PDK foundary can be downloaded [here](https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip)
  
  Steps to download Sky130 PDK and Implementaion:
 1. Download sky130 PDK files from the above link.
