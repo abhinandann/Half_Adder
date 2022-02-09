@@ -5,12 +5,12 @@
 ## Table of Contents
 #### 1.[ABSTRACT](https://github.com/abhinandann/Half_Adder/blob/main/README.md#1abstract-1)
 #### 2.[eSIM EDA TOOL](https://github.com/abhinandann/Half_Adder/blob/main/README.md#2esim-eda-tool-1) 
-#### 3.[Sky130 PDK](https://github.com/abhinandann/Half_Adder/edit/main/README.md#3sky130-pdk)
-#### 4.[CIRCUIT DESIGN](https://github.com/abhinandann/Half_Adder/edit/main/README.md#4circuit-design)
-#### 5.[IMPLEMENTATION](https://github.com/abhinandann/Half_Adder/edit/main/README.md#5implementation-1)
-#### 6.[REFERENCES](https://github.com/abhinandann/Half_Adder/edit/main/README.md#6references-1)
-#### 7.[AKNOWLEDGEMENT](https://github.com/abhinandann/Half_Adder/edit/main/README.md#7-aknowledgement)
-#### 8.[AUTHOR](https://github.com/abhinandann/Half_Adder/edit/main/README.md#8author-1)
+#### 3.[Sky130 PDK](https://github.com/abhinandann/Half_Adder/blob/main/README.md#3sky130-pdk-1)
+#### 4.[CIRCUIT DESIGN](https://github.com/abhinandann/Half_Adder/blob/main/README.md#4circuit-design-1)
+#### 5.[IMPLEMENTATION](https://github.com/abhinandann/Half_Adder/blob/main/README.md#5implementation-1)
+#### 6.[REFERENCES](https://github.com/abhinandann/Half_Adder/blob/main/README.md#6references-1)
+#### 7.[AKNOWLEDGEMENT](https://github.com/abhinandann/Half_Adder/blob/main/README.md#7-aknowledgement)
+#### 8.[AUTHOR](https://github.com/abhinandann/Half_Adder/blob/main/README.md#8author-1)
 
 ## 1.ABSTRACT
 
@@ -59,8 +59,8 @@ The 2-bit half adder truth table is as below:
 |1      |1      |0       |1  |
 
 Half adder can be easily implemented with the help of the XOR Gate for the output ‘SUM’ and an AND Gate for the ‘CARRY’.
-                                                              -Sum= A XOR B
-                                                            - Carry = A AND B
+                                                            *  Sum= A XOR B
+                                                            * Carry = A AND B
 These XOR and AND gates are implemented using CMOS transmission gates. CMOS transmission gates consists of one NMOS and one PMOS transistor, connected in parallel. The gate voltages applied to these NMOS and PMOS transistors are set to be complementary signals. As such, CMOS Transmission Gates(TG) operates as a bidirectional switch between the nodes A and B which is controlled by signal C. 
 
 In the reference circuit, half adder is implemented using transmission gate with two inverter circuits. Using CMOS TG logic, we can reduce the number transistors in the circuit implementation as compared to traditional CMOS half adder circuit. 
@@ -92,7 +92,7 @@ Half Adder is implemented using eSIM tool.
 ### Ngspice Waveforms
 ![halfadder_waveform](https://user-images.githubusercontent.com/91964227/153198612-a202c925-3637-4c43-8954-6adf5f7c8fc0.JPG)
 
-The above waveform can be verified using the truth table given [here](#CIRCUIT DESIGN)
+The above waveform can be verified using the truth table given [here](https://github.com/abhinandann/Half_Adder/blob/main/README.md#4circuit-design-1)
 
 ## 6.REFERENCES
 
@@ -106,4 +106,4 @@ The above waveform can be verified using the truth table given [here](#CIRCUIT D
 ## 8.AUTHOR
 
 ABHINANDAN R APPANNAVAR, 3rd year B.TECH, ECE, SDM COLLEGE OF ENGINEERING AND TECHNOLOGY,DHARWAD-580002 
--Contact:abhinandan7353@gmail.com
+* Contact: abhinandan7353@gmail.com
