@@ -28,17 +28,17 @@ The SkyWater Open Source PDK documentation can be found [here](https://skywater-
  
  Follow these steps for Sky130 download and implementaion:
 
--1.Download sky130 PDK files from the above link.
--2.Unzip the folder and save the sky130 files in a new folder.
--3.Save the .cir.out file in the sky_fd_pr folder as .cir file.
--4.Open with notepad and add the path .lib "models/sky130.lib.spice" tt at the top.
--5.Replace with CMOSP, mos_p with sky130_fd_pr_pfet_01v8 and CMOSN, mos_n with  sky130_fd_pr_nfet_01v8.
+1. Download sky130 PDK files from the above link.
+2. Unzip the folder and save the sky130 files in a new folder.
+3. Save the .cir.out file in the sky_fd_pr folder as .cir file.
+4. Open with notepad and add the path .lib "models/sky130.lib.spice" tt at the top.
+5. Replace with CMOSP, mos_p with sky130_fd_pr_pfet_01v8 and CMOSN, mos_n with  sky130_fd_pr_nfet_01v8.
 
 Note: For more details go to the cells folder in sky_fd_pr and follow these steps:
--1.Open the specific component folder which you want to use.
--2.Open the test folder and check the SPICE file.
--3.The SPICE file is an example of implementation of that component.
--4.You will get to know how to use the component in your circuit.
+1. Open the specific component folder which you want to use.
+2. Open the test folder and check the SPICE file.
+3. The SPICE file is an example of implementation of that component.
+4. You will get to know how to use the component in your circuit.
 
 Now Run the circuit with ngspice.
 To Run the circuit using ngspice follow the below steps
