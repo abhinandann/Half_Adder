@@ -1,0 +1,23 @@
+* C:\Users\DELL\eSim-Workspace\halfadd\halfadd.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 02/05/22 13:19:07
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+M2  /sum /b /a /vdd mosfet_p		
+M1  /sum /b Net-_M1-Pad3_ GND mosfet_n		
+M12  Net-_M1-Pad3_ /a /vdd /vdd mosfet_p		
+M11  Net-_M1-Pad3_ /a GND GND mosfet_n		
+M10  /carry Net-_M10-Pad2_ /vdd /vdd mosfet_p		
+M9  /carry Net-_M10-Pad2_ GND GND mosfet_n		
+M3  Net-_M10-Pad2_ /a /vdd /vdd mosfet_p		
+M6  Net-_M10-Pad2_ /b /vdd /vdd mosfet_p		
+M4  Net-_M10-Pad2_ /a Net-_M4-Pad3_ GND mosfet_n		
+M8  /b /a /sum /vdd mosfet_p		
+M7  /sum Net-_M1-Pad3_ /b GND mosfet_n		
+U1  /a /b /sum /carry PORT		
+M5  Net-_M4-Pad3_ /b GND GND mosfet_n		
+
+.end

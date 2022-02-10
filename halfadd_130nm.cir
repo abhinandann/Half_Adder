@@ -1,0 +1,34 @@
+* C:\Users\DELL\eSim-Workspace\halfadd\halfadd.cir
+
+.lib "sky130_fd_pr/models/sky130.lib.spice " tt 
+
+xM2  sum b a vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM1  sum b Net-_M1-Pad3_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM12  Net-_M1-Pad3_ a vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM11  Net-_M1-Pad3_ a GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM10  carry Net-_M10-Pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM9  carry Net-_M10-Pad2_ GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM3  Net-_M10-Pad2_ a vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM6  Net-_M10-Pad2_ b vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM4  Net-_M10-Pad2_ a Net-_M4-Pad3_ GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM8  b a sum vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM7  sum Net-_M1-Pad3_ b GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5				
+xM5  Net-_M4-Pad3_ b GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+
+Vdd vdd 0 3.3
+Vd0 a 0 pulse(0 3 0s 0s 0s 5us 10us)
+Vd1 b 0 pulse(0 3 0s 0s 0s 8us 18us)
+.tran 0.1us 40us
+
+.control
+
+run
+
+plot V(a) 
+plot V(b) 
+plot V(sum) 
+plot V(carry)
+
+.endc
+	
+.end
